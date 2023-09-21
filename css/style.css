@@ -22,37 +22,45 @@ header {
     background-color: #0f895e;
     padding-top: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 header a {
     text-decoration: none;
+    text-align: center;
 }
 
 nav {
     padding: 1em;
+    width: 100%;
 }
 
 nav ul {
-    display: flex;
+    display: block;
     list-style: none;
+    margin: auto;
 }
 
 nav li {
     padding-left: 2em;
+    padding-bottom: 2em;
 }
 
 nav a {
     text-decoration: none;
+    text-align: center;
     color: #f9f9f9;
+    font-size: 1.2rem;
     font-weight: 300;
+    display: block;
+    padding: .8em;
 }
 
-nav a:hover {
-    text-decoration: none;
-    color: #f9e802;
+nav a:focus {
+  outline: 2px solid #f9f9f9;
+  text-decoration: underline;
 }
+
 
 .home-link {
     margin: 2em;
@@ -62,21 +70,25 @@ nav a:hover {
 /*     Content    */
 /*================*/
 
-main {
+main{
+    margin: 0 1.4em;
+}
+.main-content{
     display: flex;
-    gap: 2.5em;
-    padding: 1.7em;
-    background-color: #f7f8f7;
+    flex-direction: column;
+    align-items: center;
 }
 
-.main-img {
-    max-width: 100%;
+.main-img img {
+    width:100%;
+    margin-top: 1.2em;
 }
 /* button will not have a link but somewhat interactive by colour changing */
 #main_btn {
     background-color: #2849ed;
     color: #f9f9f9;
     border: none;
+    width: 100%;
     padding: 1em 1.5em;
     font-size: 1.1rem;
     border-radius: .3em;
@@ -90,12 +102,21 @@ main {
 
 .secondary-content {
     display: flex;
+    flex-direction: column;
     flex-basis: auto;
     gap: 1em;
 }
 
 .enviro {
     background-color: #f7f8f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enviro-img img{
+    max-width: 80%;
+    margin-left: 3em;
 }
 
 footer {
@@ -138,6 +159,10 @@ h1 {
     padding-left: 1em;
 }
 
+h2{
+    text-align: center;
+}
+
 .secondary-header {
     color: #0f895e;
     font-family: 'Bitter', serif;
@@ -173,7 +198,7 @@ h3 {
     padding-top: 1em;
     color: #0f895e;
     font-family: 'Bitter', serif;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
 }
 
 /* enviro text will be much bigger than other paragraph size */
