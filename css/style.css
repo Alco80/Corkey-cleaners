@@ -1,0 +1,377 @@
+/* font-family: 'Bitter', serif;
+font-family: 'Work Sans', sans-serif;*/
+
+:root {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ffffff;
+    color: #1d1d1d;
+}
+
+
+
+/*================*/
+/*   Header & Nav */
+/*================*/
+
+header {
+    background-color: #0f895e;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+}
+
+nav {
+    padding: 1em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    padding-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: 300;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #f9e802;
+}
+
+.home-link {
+    margin: 2em;
+}
+
+/*================*/
+/*     Content    */
+/*================*/
+
+main {
+    display: flex;
+    gap: 2.5em;
+    padding: 1.7em;
+    background-color: #f7f8f7;
+}
+
+.main-img {
+    max-width: 100%;
+}
+/* button will not have a link but somewhat interactive by colour changing */
+#main_btn {
+    background-color: #2849ed;
+    color: #f9f9f9;
+    border: none;
+    padding: 1em 1.5em;
+    font-size: 1.1rem;
+    border-radius: .3em;
+}
+
+#main_btn:hover {
+    background-color: #1fde2c;
+    cursor: pointer;
+
+}
+
+.secondary-content {
+    display: flex;
+    flex-basis: auto;
+    gap: 1em;
+}
+
+.enviro {
+    background-color: #f7f8f7;
+}
+
+footer {
+    background-color: #0f895e;
+    color: #f7f8f7;
+    padding: 1.8em;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #94fc63;
+}
+
+footer a:visited {
+    text-decoration: none;
+    color: #0b11c8;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #fd5de2;
+}
+
+footer a:active {
+    text-decoration: none;
+    color: #ffea00;
+}
+
+/*================*/
+/*   Typography   */
+/*================*/
+
+
+
+h1 {
+    color: #f9f9f9;
+    font-family: 'Bitter', serif;
+    font-size: 2rem;
+    padding-left: 1em;
+}
+
+.secondary-header {
+    color: #0f895e;
+    font-family: 'Bitter', serif;
+    font-size: 1.7rem;
+    text-align: center;
+
+}
+
+h3 {
+    color: #0f895e;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.logo {
+    font-weight: 200;
+}
+
+.secondary-content p {
+    width: 90%;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.secondary-content p,
+.secondary-content h3 {
+    padding-left: 1.8em;
+}
+
+.main-content h2,
+.enviro h2 {
+    padding-top: 1em;
+    color: #0f895e;
+    font-family: 'Bitter', serif;
+    font-size: 2.2rem;
+}
+
+/* enviro text will be much bigger than other paragraph size */
+
+.enviro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content p,
+.enviro p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding-top: 1.3em;
+    margin-bottom: 2em;
+    width: 90%;
+}
+
+.enviro h2 {
+    text-align: center;
+}
+
+.enviro p {
+    margin: auto;
+    padding-bottom: 2.5em;
+    width: 60%;
+}
+
+/*================*/
+/*   About Us     */
+/*================*/
+
+.about-img img {
+    width: 100%;
+}
+
+.about-content {
+    padding: 2em;
+}
+
+.about-content h2 {
+    color: #0f895e;
+    font-family: 'Bitter', serif;
+    text-align: center;
+    font-size: 2.2rem;
+    padding-bottom: .5em;
+    padding-top: .2em;
+}
+
+.about-content p {
+    margin: auto;
+    padding-bottom: 2.5em;
+    width: 60%;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/*================*/
+/*   Services     */
+/*================*/
+.service-img img {
+    width: 100%;
+}
+
+.service-title p {
+    font-size: 1.5rem;
+    font-style: italic;
+    width: 60%;
+    text-align: center;
+    line-height: 1.5;
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+.service_header {
+    color: #0f895e;
+    padding-top: 1em;
+    color: #0f895e;
+    font-family: 'Bitter', serif;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.service_info {
+    display: flex;
+    justify-content: space-around;
+    gap: .7em;
+}
+
+.service_info h3 {
+    background-color: #ecfdff;
+    padding: .8em;
+    margin-top: 0;
+}
+
+.service_info section {
+    border: 3px solid #0f895e;
+    padding: 2em;
+    margin: 1.5em;
+    box-shadow: .1em .1em .9em rgba(193, 193, 193, 0.9);
+}
+
+.service_info ul {
+    list-style: square;
+    font-size: 1.3rem;
+}
+
+.service_info li {
+    margin-bottom: .6em;
+}
+
+.quote-btn {
+    text-align: center;
+    background-color: #2849ed;
+    width: 40%;
+    margin: auto;
+    font-size: 1.5rem;
+    padding: .5em;
+    border-radius: .3em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.quote-btn a {
+    color: #ecfdff;
+    text-decoration: none;
+
+}
+
+.quote-btn:hover,
+.quote-btn a:hover {
+    color: #ffffff;
+    background-color: #1fde2c;
+
+}
+
+/*================*/
+/*   Contact      */
+/*================*/
+
+.contact-title h2 {
+    color: #0f895e;
+    font-family: 'Bitter', serif;
+    text-align: center;
+    font-size: 2.2rem;
+    padding-bottom: .5em;
+    padding-top: .2em;
+}
+
+.contact-info p {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.phone,
+.hours {
+    text-align: center;
+}
+
+.phone ul,
+.hours ul {
+    list-style: none;
+}
+
+.phone li,
+.hours li {
+    padding-top: 1em;
+    font-size: 1.2rem;
+}
+
+.phone a {
+    text-decoration: none;
+    color: #0f895e;
+    font-weight: 600;
+}
+
+.hours,
+.map {
+    padding-top: 3em;
+}
+
+.hours span {
+    font-weight: 700;
+}
+
+.map p {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.4;
+    padding-bottom: 2em;
+}
+
+iframe {
+    width: 100%;
+}
