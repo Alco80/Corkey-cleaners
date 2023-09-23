@@ -1,0 +1,12 @@
+{
+  "name": "corkey-cleaners",
+  "version": "1.0.0",
+  "description": "Cleaning Company website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["Corkey Cleaners is a project site."],
+  "author": "",
+  "license": "ISC"
+}
